@@ -11,20 +11,6 @@ class EmployeeManager:
         self.employees = self.storage.load_employees(Employee)
 
     def add_employee(self, nm, dpt, des, grs, tx, bs):
-        """
-        Creates and adds a new employee to the list.
-
-        Args:
-            nm (str): Employee's name.
-            dpt (str): Employee's department.
-            des (str): Employee's designation.
-            grs (float): Employee's gross salary.
-            tx (float): Tax percentage.
-            bs (float): Bonus amount.
-
-        Returns:
-            Employee: The newly created Employee object.
-        """
         new_emp = Employee(nm, dpt, des, grs, tx, bs)
         self.employees.append(new_emp)
         self.save_data()  # Save after adding the new employee

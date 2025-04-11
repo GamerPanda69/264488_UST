@@ -4,17 +4,6 @@ class Employee:
     """Represents an employee with their details."""
     
     def __init__(self, nm, dpt, des, grs, tx, bs):
-        """
-        Initializes an Employee object.
-
-        Args:
-            nm (str): Employee's name.
-            dpt (str): Employee's department.
-            des (str): Employee's designation.
-            grs (float): Employee's gross salary.
-            tx (float): Tax percentage applicable.
-            bs (float): Bonus amount.
-        """
         # Auto-generate unique identifier
         self.id = str(uuid.uuid4())
         self.name = nm
